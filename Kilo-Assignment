@@ -1,0 +1,84 @@
+# Assumptions
+* We charge commission per order.
+* We do not charge listing fee for Sellers.
+* We offer free delivery.
+
+---
+# Business case
+### **How do we increase gross profit?**
+To increase gross profit, we either increase sales or decrease cost per order. 
+
+Kilo is currently in its "Market development" stage, with our direct competitor being the traditional trading practice. This means we need to create demand for the platform <sup>(2)</sup>, in turn competing to replace the traditional workflow with one that happens on our platform. We do this by helping more and more users adopt our platform as their "tool" to perform their usual job of trading goods. 
+
+That said, our strategy is to increase the number of successful orders, which in turn incentivizes Sellers (suppliers & brands) to stay with the platform, and encourages the easy onboarding of new Sellers. 
+
+### **Context deepdive**
+**A platform's most valuable asset is its network of Sellers and Sellers**
+- Such a network takes time to build. Being a pioneer, we have time on our side to accummulate a network as a huge competitive advantage.
+- A strong network further supplies us with valuable information to develop new verticals and serve new use cases.
+
+**Our users are deeply traditional and adverse to change**. Hence, our most important goal is to make this change as easy as possible, by allowing users to do all of what they can do with the the traditional workflow and more, using our platform.
+
+
+### **Proposed solution**
+_*Outbound sales*_ - Allow Sellers to broadcast system messages to prospective Buyers
+
+---
+# PRD
+## Proposed solution
+- Allow Sellers to broadcast information to prospective Buyers in order to introduce themself and their offerings (products, discounts)
+
+## Target users
+- Sales reps from Brands who would usually go from store to store distribute goods
+
+## Permission
+- All Sellers and Brands can use this feature
+
+## Goals
+- Provide a way for Sellers to proactively introduce themselves to prospective Buyers
+- Buyers are not spammed by <span style="color:red">irrelevant</span> Sellers
+
+## Non-goals
+- The inbox is not the place for making orders (send quotations, send product snippets, sell products outside of the Buyer's interest)
+- This feature is not the place for conversing about an order or product. Kilo handles Buyer aftersales. Product information is transparently listed on the app.
+
+## Success metrics
+- Views of the broadcast
+- CTR from the broadcast to Supplier page
+
+## Pre-conditions (Assumptions)
+- Products are identified one for one. i.e. "Thùng Pepsi 24 lon Tết" is understood as the same product as "Thùng Pepsi 24 lon phiên bản năm mới"
+
+## Feature list
+- Supplier side
+    - Broadcast content
+        - Content input
+    - Quick report of broadcast CTR
+- Buyer side
+    - Broadcast center: View all messages broadcasted to them
+    - Visit Supplier page
+
+## Detailed requirements
+### Supplier side
+- GUI specs: [link](https://app.visily.ai/projects/6d46bba4-878e-4bb4-93b2-cc2a6a7b8ade/boards/423527)
+- Other requirements:
+    - When a Supplier broadcasts a message, they are broadcasting it to their prospective Buyers
+        
+        ** _Prospective Buyers_: 
+        - Buyers who have bought one or more of the Sellers' listed products, either from this Supplier or a different Supplier.
+        OR
+        - Users who have viewed their store at least once.
+    - In the case that they do not have any Prospective Buyers, they are allotted 2 messages per month to broadcast to all of Kilo's users.
+
+### Buyer side
+GUI specs: [link](https://app.visily.ai/projects/6d46bba4-878e-4bb4-93b2-cc2a6a7b8ade/boards/423543)
+
+----
+
+### References
+1. "Pipelines, Platforms, and the New Rules of Strategy". Harvard Business Review. https://hbr.org/2016/04/pipelines-platforms-and-the-new-rules-of-strategy
+1. "Exploit the Product Life Cycle". Harvard Business Review. https://hbr.org/1965/11/exploit-the-product-life-cycle
+1. Alex Moazed. "Platform Business Model – Definition | What is it? | Explanation". Applicoinc. https://www.applicoinc.com/blog/what-is-a-platform-business-model/
+2. Tielman Nieuwoudt. "Differences between traditional trade and modern trade". The Supply Chain Lab. https://thesupplychainlab.blog/2020/09/14/differences-between-traditional-trade-and-modern-trade/
+
+
